@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Custom Drag and Drop </title>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" src="https://www.coursera.org/widget/coursera-connect.css">
+    <script src="https://www.coursera.org/widget/coursera-widget-connect-v0.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <ul id="allLabels">
+<li class="label" drag-id="LABIUM" correct="false"> LABIUM </li>
+<li class="label" drag-id="LABRUM" correct="false"> LABRUM </li>
+<li class="label" drag-id="HYPOPHARYNX" correct="false"> HYPOPHARYNX </li> <li class="label" drag-id="MANDIBLE" correct="false"> MANDIBLE </li>
+<li class="label" drag-id="MAXILLA" correct="false"> MAXILLA </li>
+<li class="label" drag-id="Lacinia" correct="false"> Lacinia </li>
+<li class="label" drag-id="Galea" correct="false"> Galea </li>
+<li class="label" drag-id="Labial" palp="" correct="false"> Labial Palp </li>
+<li class="label" drag-id="Maxillary" palp="" correct="false"> Maxillary Palp </li>
+<li class="label" drag-id="Glossa" correct="false"> Glossa </li>
+<li class="label" drag-id="Paraglossa" correct="false"> Paraglossa </li>
+<li class="label" drag-id="Cardo" correct="false"> Cardo </li>
+<li class="label" drag-id="Stipes" correct="false"> Stipes </li>
+<li class="label" drag-id="Submentum" correct="false"> Submentum </li>
+<li class="label" drag-id="Mentum" correct="false"> Mentum </li>
+<li class="label" drag-id="Prementum" correct="false"> Prementum </li>
+</ul>
+
+
+            <div id="interface">
+                
+                <button id="reset"> Reset </button>
+                <button id="submit" style="background-color:#c6ebd9"> Submit </button>
+            </div>
+
+        </div>
+
+        <div id="allParts"> <ul>
+<li class="dropzone" id="blank1" drop-id="LABIUM" style="top: 281px; left: 500px;"></li>
+<li class="dropzone" id="blank2" drop-id="LABRUM" style="top: 460px; left: 348px;"></li>
+<li class="dropzone" id="blank3" drop-id="HYPOPHARYNX" style="top: 460px; left: 559px;"></li> <li class="dropzone" id="blank4" drop-id="MANDIBLE" style="top: 460px; left: 129px;"></li>
+<li class="dropzone" id="blank5" drop-id="MAXILLA" style="top: 239px; left: 113px;"></li>
+<li class="dropzone" id="blank6" drop-id="Lacinia" style="top: 137px; left: 350px;"></li>
+<li class="dropzone" id="blank7" drop-id="Galea" style="top: 166px; left: 368px;"></li>
+<li class="dropzone" id="blank8" drop-id="Labial" palp="" style="top: 228px; left: 708px;"></li>
+<li class="dropzone" id="blank9" drop-id="Maxillary" palp="" style="top: 202px; left: 384px;"></li> <li class="dropzone" id="blank10" drop-id="Glossa" style="top: 166px; left: 682px;"></li>
+<li class="dropzone" id="blank11" drop-id="Paraglossa" style="top: 198px; left: 700px;"></li>
+<li class="dropzone" id="blank12" drop-id="Cardo" style="top: 01px; left: 352px;"></li>
+<li class="dropzone" id="blank13" drop-id="Stipes" style="top: 45px; left: 357px;"></li>
+<li class="dropzone" id="blank14" drop-id="Submentum" style="top: 44px; left: 685px;"></li>
+<li class="dropzone" id="blank15" drop-id="Mentum" style="top: 86px; left: 689px;"></li>
+<li class="dropzone" id="blank16" drop-id="Prementum" style="top: 123px; left: 676px;"></li>
+</ul>
+<img style="position:absolute" src="images/Mouthparts.jpg"> </div>
+
+
+
+    </div>
+
+    <!--Feedback messages once "submit" is clicked-->
+    <div class="dialogCorrect" title="Correct" style="display: none">
+        <div style="margin-top: 10px"> Well done!</div>
+    </div>
+
+    <div class="dialogIncorrect" title="Incorrect" style="display: none">
+        <div style="margin-top: 10px"> Please check your answers again. </div>
+    </div>
+
+</body>
+</html>
